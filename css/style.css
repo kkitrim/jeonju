@@ -1,0 +1,391 @@
+/* common */
+div , section, article{overflow: hidden;}
+img{width:100%;}
+
+/* layout */
+#wrap{overflow:hidden; position:relative; width:100%; margin:0 auto;}
+.container{position:relative; width:100%; margin:0 auto;}
+
+/* header */
+#header{position: fixed; left:0; right:0; width:100%; background:rgba(255,255,255,1); z-index:999;}
+#header .h1_logo{margin:0 auto;}
+#header .h1_logo a{display:block; font-size:0;}
+#header .nav_lnb{overflow:hidden; text-align: center;}
+#header .nav_lnb ul li a{display:block; position:relative; font-family: 'SeoulNamsanB';}
+
+/* visual */
+.section_visual{position: relative;}
+.section_visual .div_imgBox{ background-image: url('../img/visual01.png'); 
+                             background-repeat: no-repeat; 
+                             background-position: center center; 
+                             background-size: cover; }
+.section_visual .div_txtBox{background:rgba(255,255,255,0.7);}
+.section_visual .div_txtBox h2{font-family: 'JeonJuB'; line-height:1.25;}
+.section_visual .div_txtBox p{line-height:1.25;}
+.section_visual .p_visual_btn{font-size:0;}
+.section_visual .p_visual_btn a{display:inline-block; text-align: center; font-family: 'SeoulNamsanB'; color:#fff;}
+.section_visual .p_visual_btn .a_start{background:#ee685a; transition:all 0.5s ease;}
+.section_visual .p_visual_btn .a_start:hover{background: #1d67ae;}
+.section_visual .p_visual_btn .a_view{background:#3ad195; transition:all 0.5s ease;}
+.section_visual .p_visual_btn .a_view:hover{background: #1d67ae;}
+
+ /* content */
+.content{font-size:0;}
+.content h3{font-weight: bold;}
+
+/* course */
+.section_course .article > a{position: relative; display:block;}
+.section_course .article .div_txtBox{position: absolute; left:15px; top:20px; color:#fff; font-family: 'SeoulNamsanB'; font-size:0;}
+.section_course .article .div_txtBox h4, .section_course .article .div_txtBox p{text-shadow: 2px 2px 8px #000;}
+.section_course .article .div_txtBox span{display:inline-block; text-align: center; color:#fff; border-radius: 20px; transition:all 0.7s ease;}
+.section_course .article.article_food .div_txtBox span{background:#3ad195;}
+.section_course .article.article_food a:hover .div_txtBox span{background:#eb5175;}
+.section_course .article.article_picture .div_txtBox span{background:#f38034;}
+.section_course .article.article_picture a:hover .div_txtBox span{background:#eb5175;}
+.section_course .article.article_drama .div_txtBox span{background:#1d67ae;}
+.section_course .article.article_drama a:hover .div_txtBox span{background:#eb5175;}
+
+/* food, hotel */
+.section.sli ul li{float: left; box-sizing: border-box;}
+.section.sli ul li{border:1px solid #e0e0e0;}
+.section.sli ul li .div_imgBox img{border-bottom:1px solid #e0e0e0; box-sizing: border-box;}
+.section.sli ul li .div_txtBox{padding:15px; font-family: 'SeoulNamsanB'; background:#fff;}
+.section.sli ul li .div_txtBox h4{font-weight: bold;}
+.section.sli ul li .div_txtBox span{display:inline-block;}
+.section.sli ul li .div_txtBox span:nth-of-type(1){color:#ee685a;}
+
+/* food */
+.section.sli.section_food ul li a:hover .div_txtBox h4{color:#1d67ae;}
+.section.sli.section_food ul li .div_txtBox p{color:#00ab6f;}
+
+/* hotel */
+.section.sli.section_hotel ul li a:hover .div_txtBox h4{color:#00ab6f;}
+.section.sli.section_hotel ul li .div_txtBox p{color:#1d67ae;}
+
+/* information */
+.section_info a{display:block; position: relative;}
+.section_info .div_imgBox{background-repeat: no-repeat; background-position: center center; background-size:cover;}
+.section_info .article_map .div_imgBox{background-image: url('../img/info01.png');}
+.section_info .article_land .div_imgBox{background-image: url('../img/info02.png');}
+.section_info .article_event .div_imgBox{ background-image: url('../img/info03.png');}
+.section_info .div_dimBox{opacity:0; position: absolute; width:100%; height: 100%; left:0; top:0; right:0; bottom:0; transition: all 0.5s ease;}
+.section_info .article_map .div_dimBox{background:rgba(120,205,191,0.7);}
+.section_info .article_land .div_dimBox{background:rgba(243,128,52,0.7);}
+.section_info .article_event .div_dimBox{background:rgba(29,103,174,0.7);}
+.section_info a:hover .div_dimBox{opacity:1;}
+.section_info a:hover .div_dimBox{font-family: 'SeoulNamsanB'; color:#fff;}
+.section_info .div_dimBox h4{opacity:0; position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); text-align: center;}
+.section_info a:hover .div_dimBox h4{opacity:1;}
+
+/* transportration */
+.section_way .div_txtBox h4, .section_way .div_txtBox h5{font-family: 'SeoulNamsanB'; font-weight: bold;}
+.section_way .div_txtBox p{font-family: 'SeoulNamsanB'; line-height:1.25;}
+.section_way .div_txtBox .ul_trans li.li_train h5 span{color:#00ab6f;}
+.section_way .div_txtBox .ul_trans li.li_bus h5 span{color:#f38034;}
+.section_way .div_txtBox .ul_trans li.li_car h5 span{color:#1d67ae;}
+
+/* my view */
+.section_my .div_tapWrap{position: relative;}
+.section_my .div_tapBtnBox{position: absolute; left:0; top:3px;  font-size:0; z-index:99;}
+.section_my .div_tapBtnBox .span_btn{display:inline-block; font-family: 'SeoulNamsanB'; font-weight: bold; background:#dadada;  cursor: pointer; border:1px solid #dadada; box-sizing: border-box;}
+.section_my .div_tapBtnBox .span_btn.active{background:#f5f5f5; color:#00af87; border-bottom-color: #f5f5f5;}
+.section_my .div_showBox {display:none;font-family: 'SeoulNamsanB'; background:#f5f5f5; border:1px solid #dadada; box-sizing: border-box;}
+.section_my .div_showBox.active{display:block;}
+.section_my .div_showBox ul li a{display:block;} 
+.section_my .div_showBox ul li a:hover .div_txtBox h4{color:#00ab6f;}
+.section_my .div_showBox ul li .div_txtBox h4{font-weight: bold;}
+.section_my .div_showBox ul li .div_txtBox p{color:#1d67ae;}
+.section_my .div_showBox ul li .div_txtBox span{display:inline-block;}
+.section_my .div_showBox ul li .div_txtBox span:nth-of-type(1){color:#ee685a;}
+.section_my .div_showBox .div_left{float: left; border-right: 1px solid #dadada; box-sizing: border-box;}
+.section_my .div_showBox .div_left .div_imgBox{float: left;}
+.section_my .div_showBox .div_left .div_txtBox{float: right;}
+.section_my .div_showBox .div_right{float: right;}
+.section_my .div_showBox .div_right ul li{float: left;}
+
+/* footer */
+#footer{overflow:hidden; background: #dadada;}
+
+
+/* Mobile - Portrait */ 
+@media screen and (min-width:250px){
+
+    /* layout */
+    #wrap{min-width:360px;}
+    /* #wrap{max-width:460px;} */
+    .container{max-width:340px;}
+
+    /* header */
+    #header{padding-top:22px; border-bottom: 1px solid #e0e0e0; box-sizing: border-box;}
+    #header .h1_logo{width:170px; height:35px; margin-bottom:22px;}
+
+    /* mobile menu button */
+    #header .btn_lnb{position: absolute; top:31px; right:10px;  width:20px; height:25px; font-size:24px; color:#3b3b37;}
+    #header .btn_lnb span i {position: absolute; left: 0; width: 20px; height: 3px; background: #3b3b37; transition: all .25s ease-in-out;}
+    #header .btn_lnb .span_top:nth-child(1) i {top: 0;}
+    #header .btn_lnb .span_middle:nth-child(2) i {top: 7px;}
+    #header .btn_lnb .span_bottom:nth-child(3) i {top: 14px;}  
+    #header .btn_lnb .span1:nth-child(1) i {top: 30% !important; transform: rotate(45deg);}
+    #header .btn_lnb .span2:nth-child(2) i {display:none;}
+    #header .btn_lnb .span3:nth-child(3) i {top: 30% !important; transform: rotate(-45deg);}
+
+    /* mobile menu */
+    #header .nav_lnb{display:none; transition: all .25s ease-in-out;}
+    #header .nav_lnb.active{display:block; padding: 15px 0;}
+    #header .nav_lnb .container{max-width: 100%;}
+    #header .nav_lnb ul li a{padding:10px 10px; font-size:16px;}
+    #header .nav_lnb ul li a:hover{background:#3ad195; color:#fff;}
+
+    /* visual */
+    .section_visual{padding-top: 80px;}
+    .section_visual .div_imgBox{height:250px;}
+    .section_visual .div_txtBox{position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); width:250px; height:150px; padding:20px;}
+    .section_visual .div_txtBox h2{margin-bottom:20px; font-size:18px; color:#000; text-shadow: #fff 1px 1px 1px;}
+    .section_visual .p_visual_btn{margin-bottom:20px;}
+    .section_visual .p_visual_btn a{padding: 6px 18px; font-size:14px;}
+    .section_visual .p_visual_btn .a_start{margin-right:7px;}
+    .section_visual .p_sub{font-family:'SeoulNamsanB'; font-size:16px; color:#000;}
+
+    /* content */
+    .content{padding-top:35px;}
+    .content h3{margin-bottom:15px; font-size:16px;}
+
+    /* course */
+    .section_course .article{margin-bottom:10px;}
+    .section_course .article .div_txtBox h4{margin-bottom:10px; font-size:16px;} 
+    .section_course .article .div_txtBox p{margin-bottom:30px; font-size:14px;}
+    .section_course .article .div_txtBox span{padding:5px 10px; font-size:12px;}
+    .section_course .article .div_curseBox{display:none;}
+
+    /* food, hotel */
+    .section.sli ul li{width:48.5%; margin-bottom:10px;}
+    .section.sli ul li:nth-of-type(2n-1){margin-right:3%;}
+    .section.sli ul li .div_txtBox h4{margin-bottom:8px; font-size:14px;}
+    .section.sli ul li .div_txtBox p{margin-bottom:4px; font-size:12px;}
+    .section.sli ul li .div_txtBox span{font-size:12px;}
+    .section.sli ul li .div_txtBox span:nth-of-type(1){margin-right:4px;}
+
+    /* information */
+    .section_info .article{margin-bottom:10px;}
+    .section_info .div_imgBox{height:145px;}
+    .section_info .div_dimBox h4{font-size:24px;}
+
+    /* transportration */
+    .section_way .div_txtBox{padding:20px 0;}
+    .section_way .div_txtBox h4,  .section_way .div_txtBox p.p_explain{display:none;}  
+    .section_way .div_txtBox .ul_trans{padding-right:58px;}
+    .section_way .div_txtBox .ul_trans li h5{margin-bottom:10px; font-size:15px;}
+    .section_way .div_txtBox .ul_trans li p{margin-bottom:10px; font-size:14px;}
+    .section_way .div_txtBox .ul_trans li:last-of-type p{margin-bottom:0;}
+
+    /* my view */
+    .section_my{padding-bottom:35px;}
+    .section_my .div_tapWrap{padding-top:30px;}
+    .section_my .div_tapBtnBox .span_btn{margin-right:6px; padding:6px 12px; font-size:14px;}
+    .section_my .div_showBox{padding:15px 3%;}
+    .section_my .div_showBox .div_left ul li{margin-bottom:10px;}
+    .section_my .div_showBox .div_left ul li:last-child{margin-bottom:0;}
+    .section_my .div_showBox .div_left ul li .div_imgBox{width:30%;}
+    .section_my .div_showBox .div_left ul li .div_txtBox{width:58%; padding:0 6%;}
+    .section_my .div_showBox .div_left ul li .div_txtBox h4{margin-bottom:10px; font-size:14px;}
+    .section_my .div_showBox .div_left ul li .div_txtBox p{margin-bottom:3px; font-size:12px;}
+    .section_my .div_showBox .div_left ul li .div_txtBox span{font-size:12px;}
+    .section_my .div_showBox .div_left ul li .div_txtBox span:first-of-type{margin-right:4px;}
+    .section_my .div_showBox .div_left{width:53.5%;}
+    .section_my .div_showBox .div_right{width:46.5%;}
+    .section_my .div_showBox .div_right h3{padding-left:10px; font-size: 15px;}
+    .section_my .div_showBox .div_right ul li{width:43%; margin-left:7%;}
+    .section_my .div_showBox .div_right ul li:nth-of-type(3),
+    .section_my .div_showBox .div_right ul li:nth-of-type(4),
+    .section_my .div_showBox .div_right ul li:nth-of-type(5),
+    .section_my .div_showBox .div_right ul li:nth-of-type(6){display:none;}
+    .section_my .div_showBox .div_right ul li .div_imgBox{margin-bottom:10px;}
+    .section_my .div_showBox .div_right ul li .div_txtBox h4{margin-bottom:10px; font-size:14px;}
+    .section_my .div_showBox .div_right ul li .div_txtBox p{margin-bottom:5px; font-size:12px;}
+    .section_my .div_showBox .div_right ul li .div_txtBox span{font-size:12px;}
+    .section_my .div_showBox .div_right ul li .div_txtBox span:first-of-type{margin-bottom:3px;}
+
+    /* footer */
+    #footer{padding:30px 0; font-size:13px; line-height:1.5; text-align: center;}
+    #footer .h1_logo{width:170px; margin:0 auto; margin-bottom:20px;}
+    #footer .div_address address{margin-bottom: 14px;}
+
+}
+
+
+/* Mobile - Landscape */ 
+@media screen and (min-width:480px){
+
+    /* layout */
+    #wrap{min-width:660px;}
+    .container, #header .nav_lnb .container{max-width: 650px;}
+
+    /* header */
+    #header{padding-top:20px; border:none;}
+    #header .h1_logo{width:192px; height:40px;margin-bottom:20px;}
+    #header .btn_lnb{display:none;}
+    #header .nav_lnb{display:block; height:50px; border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0; box-sizing: border-box;}
+    #header .nav_lnb ul{width:668px; margin:0 auto;}
+    #header .nav_lnb ul li{float: left; margin:0 14px;}
+    #header .nav_lnb ul li a{padding:16px 14px;}
+    #header .nav_lnb ul li a:hover{background: transparent; color:#333;}
+    #header .nav_lnb ul li a span{position:relative;}
+    #header .nav_lnb ul li a span::after{display:none; content: ''; position: absolute; left:0; right:0; bottom: -15px; height:3px; background:#00ab6f; z-index: 9999;}
+    #header .nav_lnb ul li a:hover span::after{display:block;}
+
+    /* visual */
+    .section_visual{padding-top: 160px;}
+    .section_visual .div_imgBox{float: left; width:60%}
+    .section_visual .div_txtBox{position: relative; left:auto; top:auto; transform: translate(0,0); float: right; width:34.8%; height:auto; padding:25px 2.6%;}
+    .section_visual .div_txtBox h2{margin-bottom:35px; font-size:20px;}
+
+    /* content */
+    .content{padding-top:50px;}
+    .content h3{margin-bottom:20px; font-size:20px;}
+
+    /* course */
+    .section_course .article > a{transition:all 0.7s ease;}
+    .section_course .article.article_food > a{background-color:#00ab6f;}
+    .section_course .article.article_food > a:hover{background-color:#eb5175;}
+    .section_course .article.article_picture > a{background-color:#f38034;}
+    .section_course .article.article_picture > a:hover{background-color:#eb5175;}
+    .section_course .article.article_drama > a{background-color:#1d67ae;}
+    .section_course .article.article_drama > a:hover{background-color:#eb5175;}
+    .section_course .article .div_imgBox{width:60%; height:180px; float: left;}
+    .section_course .article .div_imgBox img{width:auto; height:100%;}
+    .section_course .article .div_curseBox{display:block; width:40%; height:180px; float: right; 
+                                            background-repeat: no-repeat; background-position: center center; background-size: 80% auto;}
+    .section_course .article .div_curseBox img{width:auto;}
+    .section_course .article.article_food .div_curseBox{background-image: url('../img/step_icon_food.png');}
+    .section_course .article.article_picture .div_curseBox{background-image: url('../img/step_icon_picture.png');}
+    .section_course .article.article_drama .div_curseBox{background-image: url('../img/step_icon_drama.png');}
+    .section_course .article .div_txtBox{left:30px; top:40px;}
+    .section_course .article .div_txtBox h4{margin-bottom: 15px; font-size:20px;}
+    .section_course .article .div_txtBox p{font-size:18px;}
+    .section_course .article .div_txtBox span{padding:8px 13px; font-size:14px;}
+
+    /* food, hotel */
+    .section.sli ul li{width:23.4%; margin-right:1.6%;}
+    .section.sli ul li:nth-of-type(2n-1){margin-right:1.6%;}
+    .section.sli ul li:last-of-type{margin-right: 0;}
+    
+    /* information */
+    .section_info a{width:31.7%; float: left; margin-right:1.6%;}
+    .section_info a:last-of-type{margin-right: 0;}
+    .section_info .article{margin-bottom:0;}
+    .section_info .div_dimBox h4{font-size:20px;}
+
+    /* transportration */
+    .section_way .div_imgBox{float: left; width:60%}
+    .section_way .div_txtBox{float: right; width:32%; padding:17px 4%;}
+    .section_way .div_txtBox .ul_trans{padding-right:0;}
+
+    /*  my view */
+    .section_my{padding-bottom:50px;}
+    .section_my .div_showBox .div_left{width:35%;}
+    .section_my .div_showBox .div_right{width:65%; padding: 7px 0;}
+    .section_my .div_showBox .div_right ul li{width:20%; margin-left:5%;}
+    .section_my .div_showBox .div_right ul li:nth-of-type(3),
+    .section_my .div_showBox .div_right ul li:nth-of-type(4) {display:block;}
+    .section_my .div_showBox .div_left ul li .div_txtBox{padding:5px 6%;}
+
+    /* footer */
+    #footer{font-size:14px; text-align: left;}
+    #footer .h1_logo{position: absolute; left:0; top:50%;  transform: translateY(-50%); width:192px;}
+    #footer .div_address{float: right; width:50%; padding:0 10px;}
+
+}
+
+/* Tablet */
+@media screen and (min-width:768px){
+
+    /* layout */
+    #wrap{min-width:748px;}
+    .container, #header .nav_lnb .container{max-width: 728px;}
+
+    /* transportration */
+    .section_way .div_txtBox{padding: 30px 4%;}
+    .section_way .div_txtBox .ul_trans li p{margin-bottom:20px;}
+
+}
+
+/* PC - 960 */
+@media screen and (min-width:860px){
+
+    /* layout */
+    #wrap{min-width:1100px;}
+    /* #wrap{max-width:1200px;} */
+    .container, #header .nav_lnb .container{max-width:1080px;}
+
+    /* header */
+    #header .nav_lnb ul li{margin:0 15px;}
+    #header .nav_lnb ul li a{font-size:18px;}
+    #header .nav_lnb ul li a span::after{bottom: -13px;}
+
+    /* visual */
+    .section_visual .div_imgBox{height:300px;}
+    .section_visual .div_txtBox{padding:35px 2.6%;}
+    .section_visual .div_txtBox h2{margin-bottom:41px; font-size:28px;}
+    .section_visual .p_visual_btn{margin-bottom:25px;}
+    .section_visual .p_visual_btn a{padding: 9px 24px; font-size:18px;}
+    .section_visual .p_visual_btn .a_start{margin-right:10px;}
+    .section_visual .p_sub{font-size:22px;}
+
+    /* content */
+    .content{padding-top:80px;}
+    .content h3{margin-bottom:30px; font-size:30px;}
+
+    /* course */
+    .section_course .article .div_imgBox{height:270px;}
+    .section_course .article .div_txtBox{left:40px;}
+    .section_course .article .div_txtBox h4{margin-bottom:20px; font-size:30px;}
+    .section_course .article .div_txtBox p{margin-bottom:70px; font-size:26px;}
+    .section_course .article .div_txtBox span{padding: 9px 21px; font-size:16px;}
+    .section_course .article .div_curseBox{height:270px; background-size: auto;}
+
+    /* food, hotel */
+    .section.sli ul li{width:24%; margin-right:1%;}
+    .section.sli ul li:nth-of-type(2n-1){margin-right:1%;}
+    .section.sli ul li:last-of-type{margin-right: 0;}
+    .section.sli ul li .div_txtBox{padding:20px 25px;}
+    .section.sli ul li .div_txtBox h4{margin-bottom: 15px; font-size:20px;}
+    .section.sli ul li .div_txtBox p{margin-bottom:6px; font-size:16px;}
+    .section.sli ul li .div_txtBox span{font-size:16px;}
+
+    /* information */
+    .section_info a{width:32.3%;  margin-right:1%;}
+    .section_info .div_imgBox{height:200px;}
+    .section_info .div_dimBox h4{font-size:30px;}
+
+    /* transportration */
+    .section_way .div_txtBox{padding:12px 4%;}
+    .section_way .div_txtBox h4{display:block; margin-bottom:20px; font-size:26px;}
+    .section_way .div_txtBox p.p_explain{display:block;  margin-bottom:30px; font-size:18px; text-align: justify;}
+    .section_way .div_txtBox .ul_trans li h5{margin-bottom: 15px; font-size:17px;}
+    .section_way .div_txtBox .ul_trans li p{margin-bottom:25px; font-size:16px;}
+
+    /* my view */
+    .section_my{padding-bottom:80px;}
+    .section_my .div_tapWrap{padding-top:39px;}
+    .section_my .div_tapBtnBox{top:4px;}
+    .section_my .div_tapBtnBox .span_btn{padding: 8px 14px; font-size:18px;}
+    .section_my .div_showBox{padding:15px 1.4%;}
+    .section_my .div_showBox .div_left{width:26%;}
+    .section_my .div_showBox .div_left ul li .div_txtBox h4{font-size:16px;}
+    .section_my .div_showBox .div_left ul li .div_txtBox p{margin-bottom:6px; font-size:14px;}
+    .section_my .div_showBox .div_left ul li .div_txtBox span{font-size:14px;}
+    .section_my .div_showBox .div_right{width:74%; padding: 16px 0;}
+    .section_my .div_showBox .div_right ul li{width:16.6%;}
+    .section_my .div_showBox .div_right ul li:nth-of-type(5),
+    .section_my .div_showBox .div_right ul li:nth-of-type(6){display:block;}
+    .section_my .div_showBox .div_right h3{font-size:18px;}
+    .section_my .div_showBox .div_right ul li{width:14.6%; margin-left:2%;}
+    .section_my .div_showBox .div_left ul li .div_txtBox{padding: 11px 6%;}
+    .section_my .div_showBox .div_right ul li .div_txtBox h4{font-size:16px;}
+    .section_my .div_showBox .div_right ul li .div_txtBox p{margin-bottom: 6px; font-size:14px;}
+    .section_my .div_showBox .div_right ul li .div_txtBox span{font-size:14px;}
+
+    /* footer */
+    #footer .div_address{width:40%;}
+    
+}

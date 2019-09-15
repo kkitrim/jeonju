@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>전주여행</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- css -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- web font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <h1 class="h1_logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </h1>
+            <button class="btn_lnb">
+                <span class="span_top"><i></i></span>
+                <span class="span_middle"><i></i></span>
+                <span class="span_bottom"><i></i></span>
+            </button>
+            <nav class="nav_lnb">
+                <div class="container">
+                    <ul class="clearfix">
+                        <li><a href="#sectionVisual"><span>메인</span></a></li>
+                        <li><a href="#sectionCourse"><span>추천코스</span></a></li>
+                        <li><a href="#sectionFood"><span>맛집정보</span></a></li>
+                        <li><a href="#sectionHotel"><span>숙박정보</span></a></li>
+                        <li><a href="#sectionInfo"><span>관광안내</span></a></li>
+                        <li><a href="#sectionWay"><span>교통정보</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- visual -->
+        <section id="sectionVisual" class="section section_visual">
+            <div class="container clearfix">
+                <div class="div_imgBox"></div>
+                <div class="div_txtBox">
+                    <h2>가장 한국적인 도시, 품격있는 대한민국 도시관광 1번지 전주</h2>
+                    <p class="p_visual_btn clearfix">
+                        <a href="#" class="a_start"><span>플래너 시작</span></a>
+                        <a href="#" class="a_view"><span>코스후기 보기</span></a>
+                    </p>
+                    <p class="p_sub">플래너만들기로 나만의 맞춤<br>전주여행 코스를 만들어보세요!</p>
+                </div>
+            </div>
+        </section>
+        <!-- course -->
+        <section id="sectionCourse" class="section content section_course">
+            <div class="container">
+                <h3>추천코스 <span class="fas fa-retweet"></span></h3>
+                <!-- food course -->
+                <article class="article article_food">
+                    <a href="#" class="clearfix">
+                        <div class="div_imgBox"><img src="img/course_food.png" alt="course_food"></div>
+                        <div class="div_txtBox">
+                            <h4>#먹스타그램 - 맛집 위주 코스</h4>
+                            <p>전주 맛집 코스 완전 정복!</p>
+                            <span>자세히 보기</span>
+                        </div>
+                        <div class="div_curseBox"></div>
+                    </a>
+                </article>
+                <!-- picture course -->
+                <article class="article article_picture">
+                    <a href="#" class="clearfix">
+                        <div class="div_imgBox"><img src="img/course_picture.png" alt="course_picture"></div>
+                        <div class="div_txtBox">
+                            <h4>#인생사진 - 인증샷으로 스토리 만들기</h4>
+                            <p>놓칠 수 없는 핫플레이스 장소들</p>
+                            <span>자세히 보기</span>
+                        </div>
+                        <div class="div_curseBox"></div>
+                    </a>
+                </article>
+                <!-- drama course -->
+                <article class="article article_drama">
+                    <a href="#" class="clearfix">
+                        <div class="div_imgBox"><img src="img/course_drama.png" alt="course_drama"></div>
+                        <div class="div_txtBox">
+                            <h4>#나도 이제 주인공</h4>
+                            <p>다양한 영화, 드라마 등 유명 촬영지들 총정리</p>
+                            <span>자세히 보기</span>
+                        </div>
+                        <div class="div_curseBox"></div>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <!-- food -->
+        <section id="sectionFood" class="section content section_food sli">
+            <div class="container">
+                <h3>맛집정보 <span class="fas fa-utensils"></span></h3>
+                <!-- list of food -->
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <div class="div_imgBox">
+                                <img src="img/food01.png" alt="food01">
+                            </div>
+                            <div class="div_txtBox">
+                                <h4>한국집</h4>
+                                <p>전주시 전동</p>
+                                <span>★★★★☆</span>
+                                <span>리뷰 98개</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="div_imgBox">
+                                <img src="img/food02.png" alt="food02">
+                            </div>
+                            <div class="div_txtBox">
+                                <h4>예지촌</h4>
+                                <p>전주시 효자동</p>
+                                <span>★★★☆☆</span>
+                                <span>리뷰 50개</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="div_imgBox">
+                                <img src="img/food03.png" alt="food03">
+                            </div>
+                            <div class="div_txtBox">
+                                <h4>왱이콩나물국밥</h4>
+                                <p>전주시 경원동</p>
+                                <span>★★★★☆</span>
+                                <span>리뷰 95개</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="div_imgBox">
+                                <img src="img/food04.png" alt="food04">
+                            </div>
+                            <div class="div_txtBox">
+                                <h4>용진집</h4>
+                                <p>전주시 삼천동</p>
+                                <span>★★★☆☆</span>
+                                <span>리뷰 70개</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- hotel -->
+        <section id="sectionHotel" class="section content section_hotel sli">
+            <div class="container">
+                <h3>숙박정보 <span class="fas fa-bed"></span></h3>
+                <!-- list of hotel -->
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <div class="div_imgBox">
+                                <img src="img/hotel01.png" alt="hotel01">
+                            </div>
+                            <div class="div_txtBox">
+                                <h4>가은채</h4>
+                                <p>전주시 풍남동</p>
+                                <span>★★★★☆</span>
+                                <span>리뷰 31개</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="div_imgBox">
+                                <img src="img/hotel02.png" alt="hotel02">
+                            </div>
+                            <div class="div_txtBox">
+                                <h4>한옥이야기</h4>
+                                <p>전주시 교동</p>
+                                <span>★★★★☆</span>
+                                <span>리뷰 34개</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="div_imgBox">
+                                <img src="img/hotel03.png" alt="hotel03">
+                            </div>
+                            <div class="div_txtBox">
+                                <h4>까르페 디엠 호스텔</h4>
+                                <p>전주시 노송동</p>
+                                <span>★★★★☆</span>
+                                <span>리뷰 27개</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="div_imgBox">
+                                <img src="img/hotel04.png" alt="hotel04">
+                            </div>
+                            <div class="div_txtBox">
+                                <h4>달달잠 게스트하우스</h4>
+                                <p>전주시 전동</p>
+                                <span>★★★☆☆</span>
+                                <span>리뷰 38개</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- info -->
+        <section id="sectionInfo" class="section content section_info clearfix">
+            <div class="container">
+                <h3>관광안내 <span class="fas fa-map-marked-alt"></span></h3>
+                <!-- map -->
+                <a href="#" class="a_map clearfix">
+                    <article class="article article_map">
+                        <div class="div_imgBox"></div>
+                        <div class="div_dimBox">
+                            <h4>지도 다운로드</h4>
+                        </div>
+                    </article>
+                </a>
+                <!-- land -->
+                <a href="#" class="a_land clearfix">
+                    <article class="article article_land">
+                        <div class="div_imgBox"></div>
+                        <div class="div_dimBox">
+                            <h4>관광지 소개</h4>
+                        </div>
+                    </article>
+                </a>
+                <!-- event -->
+                <a href="#" class="a_event clearfix">
+                    <article class="article article_event">
+                        <div class="div_imgBox"></div>
+                        <div class="div_dimBox">
+                            <h4>체험 / 행사</h4>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </section>
+        <!-- transportration -->
+        <section id="sectionWay" class="section content section_way">
+            <div class="container">
+                <h3>교통정보 <span class="fas fa-shuttle-van"></span></h3>
+                <div class="div_way clearfix">
+                    <div class="div_imgBox">
+                        <img src="img/way.jpg" alt="way">
+                    </div>
+                    <div class="div_txtBox">
+                        <h4 class="h4_name">여행의 시작은 바로 출발!</h4>
+                        <p class="p_explain">
+                            우리나라 가운데에 위치해 있어
+                            어디서도 출발해도 그리 멀지 않은 여행지 전주.
+                            기차와 버스, 어떤 걸 이용해도 금방 쉽게 찾아갈 수 있어
+                            더욱 편한 이곳을 가는 여러 가지 방법을 알아 보자.
+                        </p>
+                        <ul class="ul_trans">
+                            <li class="li_train">
+                                <h5><span class="fas fa-train"></span> 기차</h5>
+                                <p>용산역(KTX, 새마을호, 무궁화호) ↔ 전주역</p>
+                            </li>
+                            <li class="li_bus">
+                                <h5><span class="fas fa-bus"></span> 버스</h5>
+                                <p>강남 센트럴파크 터미널 ↔ 전주(약 2시간 40분)</p>
+                            </li>
+                             <li class="li_car">
+                                <h5><span class="fas fa-car"></span> 자가용</h5>
+                                <p>경부고속도로(68.7km) → 논산천안고속도로(82.7km) → 호남고속도로(14.7km) (약 2시간 20분)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- myView -->
+        <section class="section content section_my">
+            <div class="container">
+                <h3>내가 최근에 본 내용...</h3>
+                <div class="div_tapWrap">
+                    <div class="div_tapBtnBox clearfix">
+                        <span class="span_btn btn_course">코스</span>
+                        <span class="span_btn btn_food">맛집</span>
+                        <span class="span_btn btn_hotel active">숙박</span>
+                    </div>
+                    <div class="div_showBox show_course clearfix">
+                        <div class="div_left">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="clearfix">
+                                        <div class="div_imgBox">
+                                            <img src="img/my07.png" alt="my07">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>맛집 정복코스</h4>
+                                            <p>ID: echan10</p>
+                                            <span>★★★☆☆</span>
+                                            <span>리뷰 12개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                        <div class="div_imgBox">
+                                            <img src="img/my08.png" alt="my08">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>인생사진 코스</h4>
+                                            <p>ID: monsterm</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 32개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                        <div class="div_imgBox">
+                                            <img src="img/my09.png" alt="my09">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>촬영지 방문코스</h4>
+                                            <p>ID: chacha</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 17개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="div_right">
+                            <h3>다른 추천 코스</h3>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom13.png" alt="recom13">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>1박 코스</h4>
+                                            <p>ID: hoihoi</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 18개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom14.png" alt="recom14">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>당일 코스</h4>
+                                            <p>ID: one_ju</p>
+                                            <span>★★★☆☆</span>
+                                            <span>리뷰 30개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom15.png" alt="recom15">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>혼자가는 여행</h4>
+                                            <p>ID: fake_p</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 58개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom16.png" alt="recom16">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>전주 문화여행</h4>
+                                            <p>ID: mybook92</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 73개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom17.png" alt="recom17">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>객리단길 투어</h4>
+                                            <p>ID: emart_90</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 47개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom18.png" alt="recom18">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>전주 역사여행</h4>
+                                            <p>ID: dinosaur</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 88개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div_showBox show_food clearfix">
+                        <div class="div_left">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="clearfix">
+                                        <div class="div_imgBox">
+                                            <img src="img/my04.png" alt="my04">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>한국집</h4>
+                                            <p>전주시 전동</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 98개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                        <div class="div_imgBox">
+                                            <img src="img/my05.png" alt="my05">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>예지촌</h4>
+                                            <p>전주시 효자동</p>
+                                            <span>★★★☆☆</span>
+                                            <span>리뷰 50개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                        <div class="div_imgBox">
+                                            <img src="img/my06.png" alt="my06">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>왱이콩나물국밥</h4>
+                                            <p>전주시 경원동</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 95개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="div_right">
+                            <h3>다른 추천 맛집</h3>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom07.png" alt="recom07">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>자매갈비</h4>
+                                            <p>전주시 노송동</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 21개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom08.png" alt="recom08">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>조점례순대</h4>
+                                            <p>전주시 전동</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 18개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom09.png" alt="recom09">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>깐쇼새우</h4>
+                                            <p>전주시 중화산동</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 11개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom10.png" alt="recom10">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>베테랑분식</h4>
+                                            <p>전주시 교동</p>
+                                            <span>★★★☆☆</span>
+                                            <span>리뷰 36개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom11.png" alt="recom11">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>전일갑오</h4>
+                                            <p>전주시 경원동</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 24개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom12.png" alt="recom12">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>길거리야</h4>
+                                            <p>전주시 교동</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 23개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div_showBox show_hotel clearfix active">
+                        <div class="div_left">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="clearfix">
+                                        <div class="div_imgBox">
+                                            <img src="img/my01.png" alt="my01">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>인연 한옥숙박</h4>
+                                            <p>전주시 풍남동</p>
+                                            <span>★★★☆☆</span>
+                                            <span>리뷰 80개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                        <div class="div_imgBox">
+                                            <img src="img/my02.png" alt="my02">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>에코스테이</h4>
+                                            <p>전주시 송천동</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 20개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="clearfix">
+                                        <div class="div_imgBox">
+                                            <img src="img/my03.png" alt="my03">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>라마다 호텔</h4>
+                                            <p>전주시 고사동</p>
+                                            <span>★★★☆☆</span>
+                                            <span>리뷰 76개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="div_right">
+                            <h3>다른 추천 숙소</h3>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom01.png" alt="recom01">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>왕의지밀</h4>
+                                            <p>전주시 대성동</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 98개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom02.png" alt="recom02">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>톡 하우스</h4>
+                                            <p>전주시 중앙동</p>
+                                            <span>★★★☆☆</span>
+                                            <span>리뷰 69개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom03.png" alt="recom03">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>귀거래사</h4>
+                                            <p>전주시 교동</p>
+                                            <span>★★★☆☆</span>
+                                            <span>리뷰 38개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom04.png" alt="recom04">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>숨 하우스</h4>
+                                            <p>전주시 교동</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 73개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom05.png" alt="recom05">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>서학아트</h4>
+                                            <p>전주시 서서학동</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 87개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="div_imgBox">
+                                            <img src="img/recom06.png" alt="recom06">
+                                        </div>
+                                        <div class="div_txtBox">
+                                            <h4>엔브릿지 호텔</h4>
+                                            <p>전주시 동서학동</p>
+                                            <span>★★★★☆</span>
+                                            <span>리뷰 88개</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer id="footer" class="clearfix">
+            <div class="container clearfix">
+                <h1 class="h1_logo"><img src="img/logo_footer.png" alt="logo_footer"></h1>
+                <div class="div_address">
+                    <address>
+                        상호명 스투비플래너│대표 백주흠<br>
+                        사업자등록번호 635-81-01124  <br>
+                        통신판매업 신고 : 2018-서울관악-1368호<br>
+                        개인정보 취급방침 | 대표번호 : 02-886-0982<br>
+                        이메일 : stubbyteam@gmail.com<br>
+                        주소 : 서울특별시 관악구 남부순환로 1837 샤론빌딩 402
+                    </address>
+                    <p class="copy">COPYRIGHT&copy;STUBBY PLANNER. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
